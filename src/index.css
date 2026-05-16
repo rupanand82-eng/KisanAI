@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-agri-earth: #f5f2ed;
+  --color-agri-sage: #5a6a5b;
+  --color-agri-leaf: #2d4c3b;
+  --color-agri-wheat: #eaddca;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[var(--color-agri-earth)] text-slate-900 selection:bg-emerald-100;
+  }
+}
+
+.markdown-body {
+  @apply text-base leading-relaxed font-sans;
+}
+
+.markdown-body p {
+  @apply mb-4 text-slate-700;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  @apply font-serif italic font-semibold mt-6 mb-3 text-[var(--color-agri-leaf)] leading-tight;
+}
+
+.markdown-body h1 { @apply text-2xl; }
+.markdown-body h2 { @apply text-xl; }
+.markdown-body h3 { @apply text-lg; }
+
+.markdown-body ul, .markdown-body ol {
+  @apply ml-6 mb-4 list-disc space-y-2;
+}
+
+.markdown-body strong {
+  @apply font-semibold text-emerald-900;
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/50 shadow-sm;
+}
+
+.inner-shadow {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "KisanAI: Smart Agri Advisor",
+  "description": "An AI-powered agricultural companion for disease detection, soil advisory, and weather-based farming guidance.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": []
+}
